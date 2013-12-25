@@ -1,9 +1,10 @@
 Image Resizer Script
 ====================
 
-This is a simple script that will allow the resizing of images in a file. The user is able to choose the size but it may be left blank for a simple 500, 500 ration. All images will be resized with aspect ration no matter what the size specified by the user is.
+This is a simple script for resizing .png, .bmp, .jpg and .gif formatted images. There is a simple command line version which takes in 2 system arguments and should be used like this:
 
-This script requires the PIL library for Python and it was intended for use with Python 3.3 with the PIL fork of Pillow.
+$python image_resizer_CMD.py [image_directory] [output_directory]
 
-Corect Usage:
-$python image_resizer.py [image_folder] [output_folder]
+There is also a GUI version available and usage is pretty easy. Simply select the correct directories and it will automatically resize all of them.
+
+Keep in mind that this script will not enlarge the images and it will maintain aspect ratio according to the minimum heights and widths that are provided by you.
